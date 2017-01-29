@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="studio1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rBW-Xm-KnA">
+                                <rect key="frame" x="130" y="90" width="114" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Awz-QB-yAF"/>
+                                    <constraint firstAttribute="width" constant="114" id="Fv9-pz-E55"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="l9I-2S-Kf9">
+                                <rect key="frame" x="44" y="465" width="286" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6X8-xD-eLP"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="sliderMoved:" destination="BYZ-38-t0r" eventType="valueChanged" id="HU8-wV-mUG"/>
+                                </connections>
+                            </slider>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="tSx-Dd-asl">
+                                <rect key="frame" x="67" y="173" width="240" height="231"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tSx-Dd-asl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="Buc-pL-S1L"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="l9I-2S-Kf9" secondAttribute="bottom" constant="172" id="HN8-2N-9cq"/>
+                            <constraint firstItem="l9I-2S-Kf9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="LR3-EJ-qVE"/>
+                            <constraint firstItem="rBW-Xm-KnA" firstAttribute="centerX" secondItem="tSx-Dd-asl" secondAttribute="centerX" id="S31-Bp-LdI"/>
+                            <constraint firstItem="rBW-Xm-KnA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S7C-b5-jp8"/>
+                            <constraint firstItem="tSx-Dd-asl" firstAttribute="centerX" secondItem="l9I-2S-Kf9" secondAttribute="centerX" id="UZm-7h-rQX"/>
+                            <constraint firstItem="rBW-Xm-KnA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="70" id="pJD-H8-InK"/>
+                            <constraint firstItem="l9I-2S-Kf9" firstAttribute="top" secondItem="tSx-Dd-asl" secondAttribute="bottom" constant="61" id="xYR-qF-NDd"/>
+                            <constraint firstItem="tSx-Dd-asl" firstAttribute="top" secondItem="rBW-Xm-KnA" secondAttribute="bottom" constant="62" id="y8i-EB-0Yb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="theImage" destination="tSx-Dd-asl" id="Qv6-pm-UuR"/>
+                        <outlet property="theLabel" destination="rBW-Xm-KnA" id="cHg-fZ-bZi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="32.833583208395808"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo.png" width="201" height="201"/>
+    </resources>
+</document>
