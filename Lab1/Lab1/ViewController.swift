@@ -141,13 +141,13 @@ class ViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegat
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if (row==0){
-            discount.text=savedDis
+            salesTax.text=savedDis
             return
         }
         
         let tax = taxData[taxPicker.selectedRow(inComponent: 0)]
-        discount.text = String(tax)
-        standizeInputBox(sender: discount)
+        salesTax.text = String(tax)
+        standizeInputBox(sender: salesTax)
         updateFinalPrice()
     }
     
@@ -183,7 +183,6 @@ class ViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegat
     
     @IBAction func discountStarted(_ sender: UITextField) {
         sender.text=savedDis
-        taxPicker.isHidden=false
     }
     
     @IBAction func discountChanged(_ sender: UITextField) {
@@ -191,13 +190,13 @@ class ViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegat
     }
     
     @IBAction func discountFinished(_ sender: UITextField) {
-        taxPicker.isHidden=true
         savedDis=sender.text!
         standizeInputBox(sender: sender)
     }
     
     @IBAction func taxStarted(_ sender: UITextField) {
         sender.text=savedTax
+        taxPicker.isHidden=false
     }
     
     @IBAction func taxChanged(_ sender: UITextField) {
@@ -205,6 +204,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegat
     }
     
     @IBAction func taxFinished(_ sender: UITextField) {
+        taxPicker.isHidden=true
         savedTax=sender.text!
         standizeInputBox(sender: sender)
     }
