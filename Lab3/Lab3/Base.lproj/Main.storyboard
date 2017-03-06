@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="TMx-GG-ddy">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lab3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" colorLabel="IBBuiltInLabel-Yellow">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Wwa-7f-UBD">
+                                <rect key="frame" x="20" y="686" width="300" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STW-4x-Ucw" customClass="ColorButton" customModule="Lab3" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                        <color key="backgroundColor" red="0.91944968699999996" green="0.27962782980000001" blue="0.2800807059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="AQk-CE-65a"/>
+                                            <constraint firstAttribute="height" constant="30" id="JKT-lD-ELU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Red">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gfi-2x-xKd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fft-9r-fSF" customClass="ColorButton" customModule="Lab3" customModuleProvider="target">
+                                        <rect key="frame" x="45" y="0.0" width="30" height="30"/>
+                                        <color key="backgroundColor" red="0.95564812421798706" green="0.65799373388290405" blue="0.23146173357963562" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="fFd-NW-hrT"/>
+                                            <constraint firstAttribute="height" constant="30" id="vPn-Ys-u4G"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Red">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cr4-Gg-fdP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eY0-Oy-wba" customClass="ColorButton" customModule="Lab3" customModuleProvider="target">
+                                        <rect key="frame" x="90" y="0.0" width="30" height="30"/>
+                                        <color key="backgroundColor" red="0.9431731104850769" green="0.90421658754348755" blue="0.3194030225276947" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="D3x-cR-VxF"/>
+                                            <constraint firstAttribute="height" constant="30" id="JtS-cp-Pqs"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Red">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mjp-ev-ilc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPx-ek-Vgy" customClass="ColorButton" customModule="Lab3" customModuleProvider="target">
+                                        <rect key="frame" x="135" y="0.0" width="30" height="30"/>
+                                        <color key="backgroundColor" red="0.44300875067710876" green="0.87329858541488647" blue="0.43030756711959839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="0kN-Jb-DMN"/>
+                                            <constraint firstAttribute="height" constant="30" id="DjO-be-DD1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Red">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wT9-Oo-IUX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UBb-sh-GW3" customClass="ColorButton" customModule="Lab3" customModuleProvider="target">
+                                        <rect key="frame" x="180" y="0.0" width="30" height="30"/>
+                                        <color key="backgroundColor" red="0.35496461391448975" green="0.64132434129714966" blue="0.93207013607025146" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="3c6-j3-QCd"/>
+                                            <constraint firstAttribute="width" constant="30" id="dTV-YV-l9H"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Red">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x4D-qf-gxj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1E2-l7-Twn" customClass="ColorButton" customModule="Lab3" customModuleProvider="target">
+                                        <rect key="frame" x="225" y="0.0" width="30" height="30"/>
+                                        <color key="backgroundColor" red="0.69786208868026733" green="0.41736453771591187" blue="0.93328690528869629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="N8a-M5-fIo"/>
+                                            <constraint firstAttribute="height" constant="30" id="QuZ-Aw-3te"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Red">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E54-5j-sYW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rzs-bb-5oY" customClass="ColorButton" customModule="Lab3" customModuleProvider="target">
+                                        <rect key="frame" x="270" y="0.0" width="30" height="30"/>
+                                        <color key="backgroundColor" red="0.96312409639358521" green="0.59278982877731323" blue="0.96063214540481567" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="ull-P2-VYf"/>
+                                            <constraint firstAttribute="width" constant="30" id="vQp-V8-WIn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Red">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ySB-sJ-GyF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alpha" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhx-SC-5y2">
+                                <rect key="frame" x="356" y="712" width="58" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="DMm-j4-YyL"/>
+                                    <constraint firstAttribute="width" constant="58" id="Nw3-qE-vft"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="14z-zb-VOs">
+                                <rect key="frame" x="364" y="686" width="43" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="hMn-rJ-TMb"/>
+                                    <constraint firstAttribute="width" constant="43" id="p6O-Ed-Fd6"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="changeAlpha:" destination="BYZ-38-t0r" eventType="valueChanged" id="8Zi-zc-3kh"/>
+                                    <action selector="changeAlpha:" destination="BYZ-38-t0r" eventType="editingChanged" id="Mhw-wl-2F6"/>
+                                    <action selector="changeAlpha:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="qdW-hN-Wzx"/>
+                                    <action selector="changeAlpha:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="sIl-nF-sRN"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cng-az-oqP" customClass="ColorButton" customModule="Lab3" customModuleProvider="target">
+                                <rect key="frame" x="31" y="723" width="6" height="6"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="6" id="fbV-PS-6HP"/>
+                                    <constraint firstAttribute="width" constant="6" id="hK6-6Y-f0y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Red">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="14z-zb-VOs" secondAttribute="trailing" constant="7" id="1ue-3X-X8x"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jhx-SC-5y2" secondAttribute="bottom" constant="3" id="2z2-eE-ulJ"/>
+                            <constraint firstItem="Cng-az-oqP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="11" id="8ba-4g-lIz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Cng-az-oqP" secondAttribute="bottom" constant="7" id="RxN-8L-hiG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Wwa-7f-UBD" secondAttribute="bottom" constant="20" id="dSE-gx-al2"/>
+                            <constraint firstAttribute="trailing" secondItem="jhx-SC-5y2" secondAttribute="trailing" id="gNO-x0-nmG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="14z-zb-VOs" secondAttribute="bottom" constant="20" id="hIT-CR-FRw"/>
+                            <constraint firstItem="Wwa-7f-UBD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="zCO-gE-c8m"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="OOx-IT-wQQ">
+                        <nil key="title"/>
+                        <slider key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="2" maxValue="10" id="XiM-DZ-bOH">
+                            <rect key="frame" x="12" y="7" width="111" height="31"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </slider>
+                        <rightBarButtonItems>
+                            <barButtonItem style="done" id="GW4-R7-DM2">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9lh-4Y-lLh">
+                                    <rect key="frame" x="311" y="7" width="83" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Redo"/>
+                                    <connections>
+                                        <action selector="redoBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RdO-kl-HfY"/>
+                                    </connections>
+                                </button>
+                            </barButtonItem>
+                            <barButtonItem style="done" id="Yrw-Zw-WMs">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KFg-g1-fbd">
+                                    <rect key="frame" x="220" y="7" width="83" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Undo"/>
+                                    <connections>
+                                        <action selector="undoBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LuV-YY-tP9"/>
+                                    </connections>
+                                </button>
+                            </barButtonItem>
+                            <barButtonItem style="done" id="6Q9-C9-IKq">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="89Z-qZ-pfB">
+                                    <rect key="frame" x="129" y="7" width="83" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Clear"/>
+                                    <connections>
+                                        <action selector="clearBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fVt-G6-gGq"/>
+                                    </connections>
+                                </button>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="alphaTextField" destination="14z-zb-VOs" id="sKg-MS-ANz"/>
+                        <outlet property="clearButton" destination="89Z-qZ-pfB" id="K0b-u8-tNl"/>
+                        <outlet property="colorButton0" destination="STW-4x-Ucw" id="bB5-Tc-TOs"/>
+                        <outlet property="redoButton" destination="9lh-4Y-lLh" id="d0g-qF-kAw"/>
+                        <outlet property="selectionIndicator" destination="Cng-az-oqP" id="LVK-aM-9gO"/>
+                        <outlet property="thicknessSlider" destination="XiM-DZ-bOH" id="iDQ-ap-fRS"/>
+                        <outlet property="undoButton" destination="KFg-g1-fbd" id="PN6-za-4PD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="137.18140929535232"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Rrc-R9-Bnu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TMx-GG-ddy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="f5u-rx-xTB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2tS-cn-hLi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F9m-nN-b9n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>
